@@ -1,0 +1,442 @@
+#Copyright eLearning Brothers LLC 2012 All Rights Reserved
+[-----------------------General Game Information/Instructions-----------------------]
+#This file is where you add text to your game.
+#IMPORTANT: View tutorials and examples at http://elearningtemplates.com/video-tutorials/
+
+#You can use basic html tags to format text. (i.e. <b>, <i>, <a href="http://www.YourURL.com/" target="_blank">Your Text</a>, <font size="5" color="red">Your Text</font>)
+
+#Question Types
+#There are 3 question types to choose from on each question: T/F, multiple choice, and multiple answer:
+#  - T/F - Leave the "question type" as default. Then delete answer 3 and 4 and the question will automatically only display 2 buttons.
+#  - Multiple Choice (1 correct answer) - use the word "default" as the "question type".
+#  - Multiple Answer (multiple correct answers) - use the word "multiple" as the "question type".
+
+#If you want to "comment out" a line of code then use the pound sign in front of it.
+
+#Note for audio: .wav files are the most universally compatible with browsers and devices. (However IE only supports .mp3.)
+
+#Use the backslash symbol to do a line break "\" (remove the quotes) and continue text onto a second line.
+#NEVER end a section of text with a backslash. It will break things.
+
+
+[-----------------------Game Introduction Text---------------------------]
+introduction_text=<h1>Challenge Setup and Instructions</h1>\\
+Welcome to this eLearning challenge...
+#introduction_audio=introduction.wav,introduction.ogg,introduction.mp3
+
+ [-----------------------Play the Game Introduction Text----------------]
+introduction_step6=<h1>Game Time<h1>\
+Now it`s time to shoot some baskets!\\
+<h1> Instructions:</h1>\
+After you click Continue below, you will play the game. Try to score as many baskets as you can before your time runs out.
+#game_introduction_audio=game_introduction.wav,game_introduction.ogg,game_introduction.mp3
+
+[-----------------------Game Conclusion Text-----------------------]
+conclusion_text=<h1>Congratulations</h1>\
+This is how you did it!
+#conclusion_audio=conclusion.wav,conclusion.ogg,conclusion.mp3
+
+[-----------------------Game Buttons text----------------------]
+splash_page_button_continue_text=Continue
+intro_page_button_continue_text=Start
+question_page_button_continue_text=Continue
+question_page_button_confirm_text=Submit
+result_page_button_replay_text=Play Again
+before_game_page_button_continue_text=Continue
+in_game_button_continue_text=Continue
+in_game_button_skip_text=Skip
+
+[----------------------------Balls speed-------------------------]
+#You can adjust speed of ball. Enter speed in ms.
+ball_move_left_time=700
+ball_move_right_time=700
+ball_new_time=500
+
+[-----------------------Question Options-----------------------]
+#You can randomize the order in which questions are presented to the user.
+randomize_question_order=true
+#You can randomize the order in which answer buttons are presented to the user.
+randomize_answer_order=true
+
+#Use question_count to indicate how many questions should be presented in the game. Make sure you have question code/text for each question. 
+question_count=20
+#Uncomment questions_displayed_from_count to only pull a certain number of questions from the question_count. You can define how many questions will be pulled from the total number of questions present in the game.
+#questions_displayed_from_count=10
+
+
+[-----------------------Question 1-----------------------]
+
+q1_text=<b>Question 1 title</b>\ Question text here...
+
+#You can control the score for each individual question.
+q1_score=10
+q1_wrong_score=-5
+
+#You can add images to the question by using an <img> tag. For example: <img src="questions/YourFile.jpg" align="left"/>
+#Copy your question image to the questions folder in your game file. You can also use left and right alignment.
+#Uncomment the next line to hide question box image that's behind the question text.
+#q1_removeBackground=true
+
+#See the notes at the top of this file for instructions on question types.
+q1_type=default
+
+#You can comment out answers to make them disappear. You can also add additional answers by copy/pasting answers and renumbering them.
+q1_answer_1=<div style=text-align:center>Correct answer 1\text align</div>
+q1_answer_2=Incorrect answer 1
+q1_answer_3=Incorrect answer 2
+q1_answer_4=Incorrect answer 3
+#Indicate which of the answers above is correct. If you have multiple correct answers then separate the numbers with a comma.(i.e. 1,4)
+q1_correct_answer=1
+
+#Question 1 Correct Feedback Information
+q1_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+#Question 1 Incorrect Feedback Information
+q1_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#Question 1 Audio
+#If you want to add question audio then use the next lines. Uncomment the line by removing the # sign, type the name of the audio file, and then copy the file to the "questions" folder in your game files.
+#q1_audio=audio.wav
+
+
+[-----------------------Question 2-----------------------]
+q2_text=<b>Question 2 title</b>\ Question text here...
+q2_score=10
+q2_wrong_score=-15
+q2_type=default
+q2_answer_1=Correct answer
+q2_answer_2=Incorrect answer 1
+q2_answer_3=Incorrect answer 2
+q2_answer_4=Incorrect answer 3
+
+q2_correct_answer=1
+
+q2_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q2_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q2_audio=audio.wav
+#q2_removeBackground=true
+
+[-----------------------Question 3-----------------------]
+
+q3_text=<b>Question 3 title</b>\ Question text here...
+q3_score=10
+q3_wrong_score=-5
+q3_type=default
+q3_answer_1=Correct answer
+q3_answer_2=Incorrect answer 1
+q3_answer_3=Incorrect answer 2
+q3_answer_4=Incorrect answer 3
+
+q3_correct_answer=1
+
+q3_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q3_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q3_audio=audio.wav
+#q3_removeBackground=true
+
+[-----------------------Question 4-----------------------]
+q4_text=<b>Question 4 title</b>\ Question text here...
+q4_score=10
+q4_wrong_score=-5
+q4_type=default
+q4_answer_1=Correct answer 1
+q4_answer_2=Incorrect answer 1
+q4_answer_3=Incorrect answer 2
+q4_answer_4=Incorrect answer 3
+
+q4_correct_answer=1
+
+q4_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q4_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q4_audio=audio.wav
+#q4_removeBackground=true
+
+[-----------------------Question 5-----------------------]
+q5_text=<b>Question 5 title</b>\ Question text here...
+q5_score=10
+q5_wrong_score=-5
+q5_type=default
+q5_answer_1=Correct answer 1
+q5_answer_2=Incorrect answer 1
+q5_answer_3=Incorrect answer 2
+q5_answer_4=Incorrect answer 3
+
+q5_correct_answer=1
+
+q5_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q5_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q5_audio=audio.wav
+#q5_removeBackground=true
+
+[-----------------------Question 6-----------------------]
+q6_text=<b>Question 6 title</b>\ Question text here...
+q6_score=10
+q6_wrong_score=-5
+q6_type=default
+q6_answer_1=Correct answer 1
+q6_answer_2=Incorrect answer 1
+q6_answer_3=Incorrect answer 2
+q6_answer_4=Incorrect answer 3
+
+q6_correct_answer=1
+
+q6_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q6_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q6_audio=audio.wav
+#q6_removeBackground=true
+
+[-----------------------Question 7-----------------------]
+q7_text=<b>Question 7 title</b>\ Question text here...
+q7_score=10
+q7_wrong_score=-5
+q7_type=default
+q7_answer_1=Correct answer 1
+q7_answer_2=Incorrect answer 1
+q7_answer_3=Incorrect answer 2
+q7_answer_4=Incorrect answer 3
+
+q7_correct_answer=1
+
+q7_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q7_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q7_audio=audio.wav
+#q7_removeBackground=true
+
+[-----------------------Question 8-----------------------]
+q8_text=<b>Question 8 title</b>\ Question text here...
+q8_score=10
+q8_wrong_score=-5
+q8_type=default
+q8_answer_1=Correct answer 1
+q8_answer_2=Incorrect answer 1
+q8_answer_3=Incorrect answer 2
+q8_answer_4=Incorrect answer 3
+
+q8_correct_answer=1
+
+q8_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q8_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q8_audio=audio.wav
+#q8_removeBackground=true
+
+[-----------------------Question 9-----------------------]
+q9_text=<b>Question 9 title</b>\ Question text here...
+q9_score=10
+q9_wrong_score=-5
+q9_type=default
+q9_answer_1=Correct answer 1
+q9_answer_2=Incorrect answer 1
+q9_answer_3=Incorrect answer 2
+q9_answer_4=Incorrect answer 3
+
+q9_correct_answer=1
+
+q9_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q9_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q9_audio=audio.wav
+#q9_removeBackground=true
+
+[-----------------------Question 10-----------------------]
+q10_text=<b>Question 10 title</b>\ Question text here...
+q10_score=10
+q10_wrong_score=-5
+q10_type=default
+q10_answer_1=Correct answer 1
+q10_answer_2=Incorrect answer 1
+q10_answer_3=Incorrect answer 2
+q10_answer_4=Incorrect answer 3
+
+q10_correct_answer=1
+
+q10_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q10_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q10_audio=audio.wav
+#q10_removeBackground=true
+
+[-----------------------Question 11-----------------------]
+q11_text=<b>Question 11 title</b>\ Question text here...
+q11_score=10
+q11_wrong_score=-5
+q11_type=default
+q11_answer_1=Correct answer 1
+q11_answer_2=Incorrect answer 1
+q11_answer_3=Incorrect answer 2
+q11_answer_4=Incorrect answer 3
+
+q11_correct_answer=1
+
+q11_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q11_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q11_audio=audio.wav
+#q11_removeBackground=true
+
+[-----------------------Question 12-----------------------]
+q12_text=<b>Question 12 title</b>\ Question text here...
+q12_score=10
+q12_wrong_score=-5
+q12_type=default
+q12_answer_1=Correct answer 1
+q12_answer_2=Incorrect answer 1
+q12_answer_3=Incorrect answer 2
+q12_answer_4=Incorrect answer 3
+
+q12_correct_answer=1
+
+q12_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q12_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q12_audio=audio.wav
+#q12_removeBackground=true
+
+[-----------------------Question 13-----------------------]
+q13_text=<b>Question 13 title</b>\ Question text here...
+q13_score=10
+q13_wrong_score=-5
+q13_type=default
+q13_answer_1=Correct answer 1
+q13_answer_2=Incorrect answer 1
+q13_answer_3=Incorrect answer 2
+q13_answer_4=Incorrect answer 3
+
+q13_correct_answer=1
+
+q13_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q13_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q13_audio=audio.wav
+#q13_removeBackground=true
+
+[-----------------------Question 14-----------------------]
+q14_text=<b>Question 14 title</b>\ Question text here...
+q14_score=10
+q14_wrong_score=-5
+q14_type=default
+q14_answer_1=Correct answer 1
+q14_answer_2=Incorrect answer 1
+q14_answer_3=Incorrect answer 2
+q14_answer_4=Incorrect answer 3
+
+q14_correct_answer=1
+
+q14_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q14_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q14_audio=audio.wav
+#q14_removeBackground=true
+
+[-----------------------Question 15-----------------------]
+q15_text=<b>Question 15 title</b>\ Question text here...
+q15_score=10
+q15_wrong_score=-5
+q15_type=default
+q15_answer_1=Correct answer 1
+q15_answer_2=Incorrect answer 1
+q15_answer_3=Incorrect answer 2
+q15_answer_4=Incorrect answer 3
+
+q15_correct_answer=1
+
+q15_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q15_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q15_audio=audio.wav
+#q15_removeBackground=true
+
+[-----------------------Question 16-----------------------]
+q16_text=<b>Question 16 title</b>\ Question text here...
+q16_score=10
+q16_wrong_score=-5
+q16_type=default
+q16_answer_1=Correct answer 1
+q16_answer_2=Incorrect answer 1
+q16_answer_3=Incorrect answer 2
+q16_answer_4=Incorrect answer 3
+
+q16_correct_answer=1
+
+q16_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q16_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q16_audio=audio.wav
+#q16_removeBackground=true
+
+[-----------------------Question 17-----------------------]
+q17_text=<b>Question 17 title</b>\ Question text here...
+q17_score=10
+q17_wrong_score=-5
+q17_type=default
+q17_answer_1=Correct answer 1
+q17_answer_2=Incorrect answer 1
+q17_answer_3=Incorrect answer 2
+q17_answer_4=Incorrect answer 3
+
+q17_correct_answer=1
+
+q17_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q17_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q17_audio=audio.wav
+#q17_removeBackground=true
+
+[-----------------------Question 18-----------------------]
+q18_text=<b>Question 18 title</b>\ Question text here...
+q18_score=10
+q18_wrong_score=-5
+q18_type=default
+q18_answer_1=Correct answer 1
+q18_answer_2=Incorrect answer 1
+q18_answer_3=Incorrect answer 2
+q18_answer_4=Incorrect answer 3
+
+q18_correct_answer=1
+
+q18_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q18_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q18_audio=audio.wav
+#q18_removeBackground=true
+
+[-----------------------Question 19-----------------------]
+q19_text=<b>Question 19 title</b>\ Question text here...
+q19_score=10
+q19_wrong_score=-5
+q19_type=default
+q19_answer_1=Correct answer 1
+q19_answer_2=Incorrect answer 1
+q19_answer_3=Incorrect answer 2
+q19_answer_4=Incorrect answer 3
+
+q19_correct_answer=1
+
+q19_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q19_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q19_audio=audio.wav
+#q19_removeBackground=true
+
+[-----------------------Question 20-----------------------]
+q20_text=<b>Question 20 title</b>\ Question text here...
+q20_score=10
+q20_wrong_score=-5
+q20_type=default
+q20_answer_1=Correct answer 1
+q20_answer_2=Incorrect answer 1
+q20_answer_3=Incorrect answer 2
+q20_answer_4=Incorrect answer 3
+
+q20_correct_answer=1
+
+q20_correct_feedback_text=<h1>This is correct</h1> Correct feedback text here...
+q20_incorrect_feedback_text=<h1>That is incorrect</h1> Incorrect feedback text here...
+
+#q20_audio=audio.wav
+#q20_removeBackground=true

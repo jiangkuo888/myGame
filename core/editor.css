@@ -1,0 +1,177 @@
+/**
+ * Copyright eLearning Brothers LLC 2012 All Rights Reserved
+ */
+
+textarea.ini, .CodeMirror-scroll {
+    background: white;
+    height: 600px;
+}
+
+.CodeMirror {
+    width: 720px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-collapse: separate;
+}
+
+.editor-tabs {
+    z-index: 20;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -3px;
+}
+
+.editor-tabs a {
+    background: #eee;
+    color: gray;
+    padding: 5px 15px;
+    margin-right: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #ccc;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.editor-tabs a.current {
+    color: black;
+    background: white;
+    border-bottom: none;
+}
+
+.editor-buttons {
+    padding: 10px;
+    text-align: center;
+}
+
+.editor-button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-collapse: separate;
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top, #faa51a, #f47a20);
+    background: -o-linear-gradient(top, #faa51a, #f47a20);
+    background: linear-gradient(top, #faa51a, #f47a20);
+}
+
+.editor-button:hover {
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top, #f88e11, #f06015);
+    background: -o-linear-gradient(top, #f88e11, #f06015);
+    background: linear-gradient(top, #f88e11, #f06015);
+    text-decoration: none;
+}
+
+.editor-button:active {
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top, #f47a20, #faa51a);
+    background: -o-linear-gradient(top, #f47a20, #faa51a);
+    background: linear-gradient(top, #f47a20, #faa51a);
+    position: relative;
+    top: 1px;
+}
+
+.editor-help {
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-collapse: separate;
+    padding: 10px;
+    background: white;
+    width: 700px;
+}
+.editor-help strong {
+    font-weight: bold;
+}
+.editor-help h3 {
+    color: black;
+    font-weight: bold;
+}
+
+#reload-styles,
+#save-design,
+#save-questions,
+#save-sounds,
+.save-all {
+    opacity: 0.5;
+}
+
+.changed #reload-styles,
+.changed #save-design,
+.changed #save-questions,
+.changed #save-sounds,
+.changed.save-all {
+    opacity: 1;
+}
+
+body {
+    background: #EEE;
+}
+
+audio.error {
+    display: none;
+}
+
+.imageSelect {
+    display: inline-block;
+}
+.imageSelect span {
+    position: relative;
+}
+.imageSelect span img {
+    position: absolute;
+    margin-top: 40px;
+    right: 0;
+    top: 0;
+    display: none;
+    background: url("checks.png") 0 0 repeat;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #666;
+    border-collapse: separate;
+    z-index: 100;
+}
+.imageSelect:hover span img {
+    display: block;
+}
+
+.editor-help {
+    font-family: monospace;
+    color: #AA5500;
+}
+.editor-help li span {
+    /*float: left;*/
+}
+.editor-help .re1 {
+    color: #0000FF;
+}
+.editor-help .re2 {
+    color: #009900;
+}
+.editor-help .br0,
+.editor-help .nu0 {
+    display: none;
+}
+.productionHidden {
+    display: none;
+}
+#ColorPicker {
+    margin-left: 90px;
+    margin-top: -15px;
+}

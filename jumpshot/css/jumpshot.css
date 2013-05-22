@@ -1,0 +1,370 @@
+/**
+ * Copyright eLearning Brothers LLC 2012 All Rights Reserved
+ */
+div.game :focus {outline: 0; }
+
+div.game div.buttons {
+    padding-top: 20px;
+    text-align: center;
+    clear: both;
+    width: 100%;
+}
+div.game {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: black 50% 50% no-repeat;
+    width: 720px;
+    height: 540px;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+div.game div.logo3,
+div.game div.logo2,
+div.game div.logo1 {
+    background: 50% 50% no-repeat;
+    width: 0px;
+    height: 0px;
+    background-size: cover;
+    position: absolute;
+}
+
+div.game a.button {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    background: #3787e0;
+    border-radius: 8px;
+    line-height: 35px;
+    height: 35px;
+    font-size: 1.5em;
+    padding: 4px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+
+    position: relative;
+    z-index: 700;
+
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7),  0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.10);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7),  0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 0 10px rgba(0,0,0,0.7),  0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.10);
+
+}
+
+div.game a.button:hover {
+    color: white;
+    background: #3787e0;
+}
+
+div.game a.button:active {
+    top:1px;
+    left:1px;
+}
+
+div.game>div {
+    display: none;
+}
+
+div.game.step-0>div.step-0,
+div.game.step-1>div.step-1,
+div.game.step-2>div.step-2,
+div.game.step-3>div.step-3,
+div.game.step-4>div.step-4,
+div.game.step-5>div.step-5,
+div.game.step-6>div.step-6,
+div.game.step-7>div.step-7{
+    display: block;
+}
+
+/* STEP 1 */
+/* STEP 2 */
+div.game div.step-2 {
+    padding-top: 150px;
+}
+div.game div.step-2-description {
+    padding: 0px;
+    background: white;
+    border: 5px solid #CCC;
+    margin: 0 auto;
+    width: 600px;
+    height: 290px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+div.game div.step-2-description>div {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 275px;
+    min-height: 275px;
+}
+div.game div.step-2-description>div>div {
+    margin: 10px;
+}
+/* STEp 3*/
+
+div.game div.questionboard {
+
+}
+div.game div.questionboard table {
+    margin: 0 auto;
+    background: rgba(0,0,0,0.5);
+}
+
+div.game div.score {
+    color: red;
+    float: right;
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 100;
+    position: relative;
+}
+div.time {
+    display: none;
+}
+
+
+/* STEP 4 */
+div.game .step-4.answered .question-choose-wrapper {
+    display: none;
+}
+div.game .step-4 .buttons.buttons-confirm,
+div.game .step-4.unanswered .buttons.buttons-continue,
+div.game .step-4.unanswered .question-answered-block-wrapper{
+    display: none;
+}
+div.game .step-4.unanswered.type-multiple .buttons.buttons-confirm {
+    display: block;
+}
+div.game .step-4.answered.incorrect .question-answered-block-wrapper h1{
+    color:#ff0000;
+}
+div.game .step-4.answered.correct .question-answered-block-wrapper h1{
+    color: #007f3f;
+}
+div.game .question-answered-block-wrapper {
+    padding: 0px;
+    background: white;
+    height: 191px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    float: left;
+}
+div.game .question-answered-block-wrapper>div {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 115px;
+    min-height: 115px;
+}
+div.game .question-answered-block-wrapper>div>div {
+    margin: 10px;
+}
+div.game .question-choose-wrapper {
+    float: left;
+    text-align: center;
+
+}
+
+
+
+div.game .question-choose .variant {
+    margin:5px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+    cursor: pointer;
+    display: inline-block;
+}
+div.game .question-choose .variant div.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    margin: 0px auto;
+}
+div.game  .question-choose .variant div.table>div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+div.game  .question-choose .variant div.table>div div {
+    width: 100%;
+}
+
+/*.question-block-wrapper {
+    margin-top: 65px;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+    width: 300px;
+    height: 262px;
+    background: black;
+
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}*/
+div.game .question-block-wrapper.transparent {
+    background: transparent;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+div.game .question-block-wrapper.transparent>div>div {
+    /*display: none;*/
+}
+div.game .question-block-wrapper.transparent>div.question-block-wrapper-inner {
+    background: transparent;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/*.question-block-wrapper>div.question-image {
+    background-size: cover;
+    position: absolute;
+}
+.question-block-wrapper>div.question-image,
+.question-block-wrapper>div.question-block-wrapper-inner {
+    background:  0 0 no-repeat;
+
+    width: 300px;
+    height: 262px;
+}*/
+div.game .question-block-wrapper>div.question-block-wrapper-inner {
+    background-size: cover;
+    height: 100%;
+}
+div.game .question-block-wrapper>div>div {
+    /*padding: 20px;*/
+}
+div.game .question-block-wrapper>div.question-block-wrapper-inner>div {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+    min-height: 100%;
+}
+div.game .question-block-wrapper>div.question-block-wrapper-inner>div>div {
+    margin: 10px;
+}
+/* STEP 5 */
+div.game .result-block-wrapper {
+    padding: 0px;
+    background: white;
+    width: 600px;
+    margin: 0 auto;
+    height: 290px;
+    border: 5px solid #ccc;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    /*margin-top: 50px;*/
+}
+div.game .result-block-wrapper>div {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+    min-height: 100%;
+}
+div.game .result-block-wrapper>div>div {
+    margin: 10px;
+}
+div.game div.result-block div.score-description {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+body.gamebody {
+    margin: 0 auto;
+    width: 720px;
+    height: 540px;
+    /*padding: 50px;
+    padding-top: 0px;*/
+}
+
+div.game .score_text{
+    color: #cccccc;
+    z-index:500;
+    font-size: 15px;
+    width: 128px;
+    height: 35px;
+    padding-left: 85px;
+}
+div.game .quiz-percent-value{
+    padding-left: 85px;
+    width: 128px;
+    height: 35px;
+}
+
+
+/*step 6*/
+
+div.game div.step-6-description {
+    padding: 0px;
+    background: white;
+    border: 5px solid #CCC;
+    margin: 0 auto;
+    width: 600px;
+    height: 290px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+div.game div.step-6-description>div {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+    min-height: 100%;
+}
+div.game div.step-6-description>div>div {
+    margin: 10px;
+}
+
+div.game div.step-6 {
+    padding-top: 150px;
+}
+
+div.game .animation{
+    width: 125px;
+    height: 125px;
+    background-image: url("../config/images/ball.png");
+    position: absolute;
+    background-size: cover;
+    z-index: 6;
+}
+
+div.game .step-7-animation{
+    width: 720px;
+    height: 540px;
+    display: block;
+    z-index: 600;
+    background: transparent;
+    position: absolute;
+
+}
+
+div.game .basket, div.game .basket1{
+    width: 75px;
+    height: 100px;
+    display: block;
+    z-index: 5;
+    background: transparent;
+    position: absolute;
+    left:328px;
+    background: no-repeat;
+
+}
+div.game .basket{
+    background-image: url("../config/images/basket.png");
+    top: 115px;
+}
+div.game .basket1{
+    top: 119px;
+    background-image: url("../config/images/basket2.png");
+}

@@ -1,0 +1,87 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+div.game html, div.game body, div.game div, div.game span, div.game applet, div.game object, div.game iframe,
+div.game h1, div.game h2, div.game h3, div.game h4,div.game h5, div.game h6, div.game p, div.game blockquote, div.game pre,
+div.game a, div.game abbr, div.game acronym, div.game address, div.game big, div.game cite, div.game code,
+div.game del, div.game dfn, div.game em, div.game img, div.game ins, div.game kbd, div.game q, div.game s,div.game samp,
+div.game small, div.game strike, div.game strong, div.game sub, div.game sup, div.game tt, div.game var,
+div.game b, div.game u, div.game i, div.game center,
+div.game dl, div.game dt, div.game dd, div.game ol, div.game ul,div.game li,
+div.game fieldset, div.game form, div.game label, div.game legend,
+div.game table, div.game caption, div.game tbody, div.game tfoot, div.game thead, div.game tr, div.game th, div.game td,
+div.game article, div.game aside, div.game canvas, div.game details, div.game embed,
+div.game figure, div.game figcaption,  div.game footer, div.game header, div.game hgroup,
+div.game menu, div.game  nav, div.game output, div.game ruby, div.game section, div.game summary,
+div.game time, div.game mark, div.game audio, div.game video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+div.game {
+	line-height: 1;
+}
+div.game ol, div.game ul {
+	list-style: none;
+}
+div.game blockquote, div.game q {
+	quotes: none;
+}
+div.game blockquote:before, div.game blockquote:after,
+div.game q:before, div.game q:after {
+	content: '';
+	content: none;
+}
+div.game table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div.game {
+    background: gray;
+    font-family: Helvetica, Aria, sans-serif;
+    color: #444;
+}
+
+div.game .error {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    color: #FFF;
+}
+
+div.game h1 {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.8em;
+}
+div.game h2 {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
+}
+div.game h3 {
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
+}
+div.game b, div.game strong {
+    font-weight: bold;
+}
+div.game i, div.game em {
+    font-style: italic;
+}
+div.game small {
+    font-size: 0.9;
+}
